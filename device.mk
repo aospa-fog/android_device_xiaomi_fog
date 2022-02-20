@@ -271,6 +271,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.lmk.thrashing_limit_decay=50 \
     ro.lmk.stall_limit_critical=40
 
+# LMK
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.lmk.force_inkernel_lmk=true
+
 # Logs
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.log.tag.TrafficStats=S
