@@ -419,6 +419,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.se.type=HCE,UICC \
     sys.vendor.shutdown.waittime=500
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RMNet Data
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.data.df.agg.dl_pkt=10 \
