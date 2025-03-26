@@ -17,7 +17,7 @@
 -->
 <resources>
     <!-- The padding on the side of the navigation bar. Must be greater than or equal to
-         navigation_extra_key_width -->
+    navigation_extra_key_width -->
     <dimen name="navigation_side_padding">72.0px</dimen>
 
     <!-- the padding on the start of the statusbar -->
@@ -39,5 +39,5 @@
     <dimen name="ongoing_appops_dot_min_padding">40px</dimen>
 
     <!-- Height of the status bar header bar when on Keyguard -->
-    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_portrait</dimen>
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_default</dimen>
 </resources>
