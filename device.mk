@@ -216,8 +216,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 # GrapheneCamera
+ifeq ($(USE_GRAPHENE_CAMERA), true)
 PRODUCT_PACKAGES += \
     GrapheneCamera
+endif
 
 # Graphics
 PRODUCT_VENDOR_PROPERTIES += \
