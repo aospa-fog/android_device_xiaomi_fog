@@ -155,15 +155,17 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qti.display_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.display_boot.sh \
-    frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
+    frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
+    frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
+    frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     debug.hwui.skia_atrace_enabled=false \
-    debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=0 \
-    debug.sf.enable_egl_image_tracker=0 \
-    debug.sf.enable_transaction_tracing=false \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.svi=1 \
     vendor.display.idle_time=0 \
